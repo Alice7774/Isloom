@@ -1,10 +1,13 @@
 <!DOCTYPE html>
 <html lang="zh-CN">
 <head>
-<script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@latest"></script>
-const supabaseUrl = 'https://ktgotzkcdxqkdkaxssze.supabase.co';
-const supabaseKey = 'sb_publishable_p8v45dv4wTBmabW-CPQp-w_qB4kjl2x';
-const supabase = supabase.createClient(supabaseUrl, supabaseKey);
+<script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2.49.0"></script>
+<script>
+    const supabase = window.supabase.createClient(
+        'https://ktgotzkcdxqkdkaxssze.supabase.co',
+        'sb_publishable_p8v45dv4wTBmabW-CPQp-w_qB4kjl2x'
+    );
+    console.log('✅ Supabase 已初始化');
 </script>
 </head>	
     <meta charset="UTF-8">
